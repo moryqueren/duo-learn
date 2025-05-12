@@ -1,0 +1,171 @@
+/* Styles personnalisés pour Duo Learn */
+
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styles pour les dégradés */
+.bg-gradient-to-r {
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Styles pour le texte avec dégradé */
+.bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Styles pour les menus déroulants des posts */
+.post-menu-content {
+    transition: all 0.3s ease;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation pour les boutons like */
+.like-btn.active {
+    color: #F43F5E;
+    font-weight: 600;
+}
+
+.like-btn.active i {
+    font-weight: 900;
+}
+
+/* Styles pour les transitions */
+button, a {
+    transition: all 0.2s ease;
+}
+
+/* Styles pour les ombres */
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Styles pour les animations de hover */
+.hover\:bg-gray-50:hover {
+    background-color: #f9fafb;
+    transition: background-color 0.2s ease;
+}
+
+.hover\:bg-violet-50:hover {
+    background-color: #f5f3ff;
+    transition: background-color 0.2s ease;
+}
+
+/* Styles pour les animations de focus */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.3);
+}
+
+/* Styles pour la barre de progression */
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* Styles pour les cartes */
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+/* Styles pour les badges de niveau de langue */
+.bg-violet-100 {
+    background-color: #f5f3ff;
+}
+
+.text-violet-600 {
+    color: #7C3AED;
+}
+
+.bg-turquoise-100 {
+    background-color: #e0f2fe;
+}
+
+.text-turquoise-600 {
+    color: #0EA5E9;
+}
+
+.bg-rose-100 {
+    background-color: #ffe4e6;
+}
+
+.text-rose-600 {
+    color: #F43F5E;
+}
+
+/* Styles pour la scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c4b5fd;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a78bfa;
+}
+
+/* Styles pour les animations d'entrée */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.post-menu-content.show {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Styles pour les boutons avec dégradé */
+.bg-gradient-to-r.from-violet-600.to-turquoise-600 {
+    background-image: linear-gradient(to right, #7C3AED, #0EA5E9);
+    transition: opacity 0.3s ease;
+}
+
+.bg-gradient-to-r.from-violet-600.to-turquoise-600:hover {
+    opacity: 0.9;
+}
+
+/* Styles pour les cartes d'événements */
+.bg-violet-100, .bg-turquoise-100, .bg-rose-100 {
+    transition: transform 0.2s ease;
+}
+
+.bg-violet-100:hover, .bg-turquoise-100:hover, .bg-rose-100:hover {
+    transform: scale(1.05);
+}
