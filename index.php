@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Duo Learn - Apprenez ensemble</title>
+    <link rel="shortcut icon" href="./img/Image1.png" type="image/x-icon">
+    <script src="./tailwindcsscdn.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -77,15 +79,15 @@
             
             <nav class="flex-1 px-4 pb-4">
                 <div class="space-y-2">
-                    <a href="index.html" class="flex items-center px-4 py-3 text-violet-600 bg-violet-50 rounded-xl">
+                    <a href="./index.php" class="flex items-center px-4 py-3 text-violet-600 bg-violet-50 rounded-xl">
                         <i class="fas fa-home text-lg w-6"></i>
                         <span class="ml-3 font-medium">Accueil</span>
                     </a>
-                    <a href="explore.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
+                    <a href="./dashboard/explore.php" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
                         <i class="fas fa-compass text-lg w-6"></i>
                         <span class="ml-3">Explorer</span>
                     </a>
-                    <a href="messages.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
+                    <a href="./dashboard/messages.php" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
                         <i class="fas fa-comment-alt text-lg w-6"></i>
                         <span class="ml-3">Messages</span>
                     </a>
@@ -93,7 +95,7 @@
                         <i class="fas fa-bell text-lg w-6"></i>
                         <span class="ml-3">Notifications</span>
                     </a>
-                    <a href="profile.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
+                    <a href="./dashboard/profil.php" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
                         <i class="fas fa-user text-lg w-6"></i>
                         <span class="ml-3">Profil</span>
                     </a>
@@ -148,15 +150,15 @@
                     <i class="fas fa-home text-xl"></i>
                     <span class="text-xs mt-1">Accueil</span>
                 </a>
-                <a href="explore.html" class="flex flex-col items-center py-3 text-gray-500">
+                <a href="./dashboard/explore.php" class="flex flex-col items-center py-3 text-gray-500">
                     <i class="fas fa-compass text-xl"></i>
                     <span class="text-xs mt-1">Explorer</span>
                 </a>
-                <a href="messages.html" class="flex flex-col items-center py-3 text-gray-500">
+                <a href="./dashboard/messages.php" class="flex flex-col items-center py-3 text-gray-500">
                     <i class="fas fa-comment-alt text-xl"></i>
                     <span class="text-xs mt-1">Messages</span>
                 </a>
-                <a href="profile.html" class="flex flex-col items-center py-3 text-gray-500">
+                <a href="./dashboard/profil.php" class="flex flex-col items-center py-3 text-gray-500">
                     <i class="fas fa-user text-xl"></i>
                     <span class="text-xs mt-1">Profil</span>
                 </a>
@@ -193,9 +195,9 @@
                                     <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-sm">+25 XP</span>
                                 </div>
                                 <p class="mt-2">Pratiquez votre espagnol en décrivant votre journée idéale en 5 phrases.</p>
-                                <button class="mt-4 px-4 py-2 bg-white text-violet-600 rounded-xl font-medium hover:bg-opacity-90 transition-opacity">
+                                <a href="./fonctionnalite/quiz.php" class="mt-10 px-4 py-3 bg-white text-violet-600 rounded-xl font-medium hover:bg-opacity-90 transition-opacity">
                                     Commencer le défi
-                                </button>
+                                </a>
                             </div>
                         </div>
 
